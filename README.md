@@ -1,11 +1,11 @@
 # TP-11 Algorithmes de tri
 
-### NOM : DOE
-### Prénom : John
+### NOM : SILVESTRE
+### Prénom : Franck
 ### TP group :
 - [ ] A
 - [ ] B
 - [ ] C
 - [ ] D
 - [ ] E
-- [ ] F
+- [x] F
