@@ -50,7 +50,7 @@ class ListeEntiersTrisTest {
         // Then: la liste est triée
         assertTrue(liste.egale(ListeEntiers(intArrayOf(-10, 15, 42, 120, 1000, 20000))))
     }
-    /*
+
         // === test de la fusion de deux listes triées
 
         @Test
@@ -129,7 +129,7 @@ class ListeEntiersTrisTest {
                 )
             )
         }
-
+    /*
         // === test du tri fusion
 
         @Test

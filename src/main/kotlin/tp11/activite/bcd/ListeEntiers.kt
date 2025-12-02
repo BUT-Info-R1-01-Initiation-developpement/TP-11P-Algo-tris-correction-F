@@ -247,6 +247,40 @@ class ListeEntiers(tabEntiers: IntArray) {
     }
 
 
+    /**
+     * Fusionne la liste courante triée avec la liste triée donnée
+     * Complexité pire cas : O(n)
+     *
+     * @param listeDroite la liste donnée à fusionner avec la liste courante
+     *
+     * @return une nouvelle liste correspondant à la fusion
+     *
+     */
+    fun fusionne(listeDroite: ListeEntiers): ListeEntiers {
+        var i = 0   // index liste gauche
+        var j = 0   // index liste droite
+        val listeRes = ListeEntiers()
+        // comparer et copier le plus petit élément
+        while (i < this.taille && j < listeDroite.taille) {
+            if (this[i] <= listeDroite[j]) {
+                listeRes.ajoute(this[i])
+                i++
+            } else {
+                listeRes.ajoute(listeDroite[j])
+                j++
+            }
+        }
+        // compléter avec la liste dans laquelle il reste des éléments
+        for (l in i..<this.taille) {
+            listeRes.ajoute(this[l])
+        }
+        for (l in j..<listeDroite.taille) {
+            listeRes.ajoute(listeDroite[l])
+        }
+        return listeRes
+    }
+
+
 
     private fun assureCapacite() {
         if (this.taille == this.capaciteReelle) {
