@@ -21,11 +21,11 @@
 4. Quelle syntaxe autorise l'utilisation du mot clé `operator` dans la signature de la méthode `set()` à la place de la notation `liste.set(1, 18)`&nbsp;? \
    `liste[1] = 18`   
 5. Quelle est la complexité de la méthode `egale()` dans le meilleur et le pire cas ? 
-   - meilleur cas : ... 
-   - pire cas : ...
+   - meilleur cas : O(1) 
+   - pire cas : O(n)
 
 6. La méthode `supprime()` est fournie dans une version peut-être différente de celle que vous avez produite. Quelle est la complexité de l'implantation proposée dans le pire cas ?\
-...
+O(n)
 
 ### Activité D - 1
 
