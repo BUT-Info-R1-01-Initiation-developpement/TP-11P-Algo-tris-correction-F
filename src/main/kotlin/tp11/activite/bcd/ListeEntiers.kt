@@ -281,6 +281,15 @@ class ListeEntiers(tabEntiers: IntArray) {
     }
 
 
+    private fun slice(indices: IntRange): ListeEntiers {
+        require(indices.first >= 0 && indices.last < this.taille)
+        val res = ListeEntiers()
+        for(i in indices) {
+            res.ajoute(this[i])
+        }
+        return res
+    }
+
 
     private fun assureCapacite() {
         if (this.taille == this.capaciteReelle) {
