@@ -226,6 +226,28 @@ class ListeEntiers(tabEntiers: IntArray) {
     }
 
 
+    /**
+     *  Tri la liste dans l'ordre croissant "en place".
+     *  L'algorithme utilisé est l'algorithme de tri par insertion.
+     *  Complexité asymptotique : O(n^2)
+     */
+    fun triParInsertion() {
+        if (this.isEmpty()) {
+            return
+        }
+        for (i in 1..<this.taille) {
+            val eltAInserer = this[i]
+            var j = i - 1
+            while (j >= 0 && this[j] > eltAInserer) {
+                this[j + 1] = this[j]
+                j--
+            }
+            this[j + 1] = eltAInserer
+        }
+    }
+
+
+
     private fun assureCapacite() {
         if (this.taille == this.capaciteReelle) {
             this.augmenteCapacite()
