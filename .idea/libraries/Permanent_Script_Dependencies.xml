@@ -161,6 +161,7 @@
       <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/dataframe-csv/1.0.0-Beta3n/dataframe-csv-1.0.0-Beta3n.jar" />
       <root url="file://$MAVEN_REPOSITORY$/io/deephaven/deephaven-csv/0.15.0/deephaven-csv-0.15.0.jar" />
       <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/dataframe-json/1.0.0-Beta3n/dataframe-json-1.0.0-Beta3n.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.2/kotlinNotebook/f-tp-11p-algorithmes-tri-francksilvestre.cc918cef/kernels/0.13.0-600-1/kotlin-jupyter-ide-classpath-shadowed-jar/kotlin-jupyter-ide-classpath-shadowed-0.13.0-600-1.jar" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -319,6 +320,7 @@
       <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/dataframe-csv/1.0.0-Beta3n/dataframe-csv-1.0.0-Beta3n-sources.jar" />
       <root url="file://$MAVEN_REPOSITORY$/io/deephaven/deephaven-csv/0.15.0/deephaven-csv-0.15.0-sources.jar" />
       <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/dataframe-json/1.0.0-Beta3n/dataframe-json-1.0.0-Beta3n-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.2/kotlinNotebook/f-tp-11p-algorithmes-tri-francksilvestre.cc918cef/kernels/0.13.0-600-1/kotlin-jupyter-script-classpath-shadowed-sources-jar/kotlin-jupyter-script-classpath-shadowed-0.13.0-600-1-sources.jar" />
     </SOURCES>
   </library>
 </component>
