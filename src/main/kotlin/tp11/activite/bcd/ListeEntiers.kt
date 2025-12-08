@@ -280,6 +280,30 @@ class ListeEntiers(tabEntiers: IntArray) {
         return listeRes
     }
 
+    /**
+     * @return une nouvelle liste triée avec tri fusion
+     *
+     * Complexité asymptotique : O(n log n)
+     */
+    fun listeTriee(): ListeEntiers {
+        if (this.taille <= 1) {
+            val res = ListeEntiers()
+            if (this.taille == 1) {
+                res.ajoute(this[0])
+            }
+            return res
+        }
+        // Diviser la liste en deux moitiés
+        val milieu = this.taille / 2
+        val listeG = this.slice(0 until milieu)
+        val listeD = this.slice(milieu..<this.taille)
+
+        // trier de maniere recursive
+        val listeGTriee = listeG.listeTriee()
+        val listeDTriee = listeD.listeTriee()
+
+        return listeGTriee.fusionne(listeDTriee)
+    }
 
     private fun slice(indices: IntRange): ListeEntiers {
         require(indices.first >= 0 && indices.last < this.taille)
